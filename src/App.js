@@ -30,7 +30,7 @@ class App extends Component {
           </div>
           <ScrollableAnchor id={'home'}>
             <div className="slider section">
-              <h1>slider goes here</h1>
+              <h1>FINE!!!  I'll change it back to multi-page.  >:(</h1>
             </div>
           </ScrollableAnchor>
           <div className="service-icons section">
@@ -42,19 +42,19 @@ class App extends Component {
           </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'about'}>
-          <div className="about section">
-              <h1>About</h1>
-          </div>
+            <div className="about section">
+                <h1>About</h1>
+            </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>
-          <div className="contact section">
-              <h1>Contact</h1>
-          </div>
+            <div className="contact section">
+                <h1>Contact</h1>
+            </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'testimonials'}>
-          <div className="testimonials section">
-              <h1>Testimonials</h1>
-          </div>
+            <div className="testimonials section">
+                <h1>Testimonials</h1>
+            </div>
           </ScrollableAnchor>
         </div>
       </div>
