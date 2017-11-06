@@ -1,28 +1,50 @@
-.App {
-  text-align: center;
-}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Tahoma, sans-serif; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff; }
+  .content .header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #fff; }
+    .content .header a {
+      text-decoration: none; }
+    .content .header .menu {
+      width: 100%;
+      justify-content: center; }
+    .content .header ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      margin: 30px 0; }
+      .content .header ul li {
+        list-style-type: none;
+        font-size: 18px;
+        text-transform: uppercase; }
+  .content .section {
+    padding: 30px; }
+  .content .service-icons {
+    height: 150px;
+    background-color: #a3d673; }
+  .content .slider {
+    margin-top: 200px;
+    height: 200px;
+    background-color: #5f452d; }
+  .content .about {
+    height: 500px; }
+  .content .services {
+    height: 500px;
+    margin-top: 40px; }
+  .content .contact {
+    height: 500px; }
+  .content .testimonials {
+    height: 500px; }
