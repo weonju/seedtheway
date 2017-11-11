@@ -5,46 +5,47 @@
   font-family: Verdana, Tahoma, sans-serif; }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  background-color: #fff; }
-  .content .header {
-    position: fixed;
+  background-color: #fff;
+  width: 100%; }
+  .content .menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    background-color: #fff; }
-    .content .header a {
-      text-decoration: none; }
-    .content .header .menu {
-      width: 100%;
-      justify-content: center; }
-    .content .header ul {
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
-      margin: 30px 0; }
-      .content .header ul li {
-        list-style-type: none;
-        font-size: 18px;
-        text-transform: uppercase; }
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: white;
+    width: 100%; }
+    .content .menu a {
+      text-decoration: none;
+      color: #47290f;
+      font-weight: bold; }
+  .content ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px; }
+    .content ul li {
+      list-style-type: none;
+      font-size: 18px;
+      text-transform: uppercase; }
   .content .section {
-    padding: 30px; }
+    padding: 0 80px;
+    height: 600px; }
+    .content .section h1 {
+      margin-top: -90px;
+      color: #47290f; }
   .content .service-icons {
-    height: 150px;
-    background-color: #a3d673; }
-  .content .slider {
-    margin-top: 150px;
-    height: 200px;
-    background-color: #856951; }
-  .content .about {
-    height: 500px; }
-  .content .services {
-    height: 500px;
-    margin-top: 40px; }
-  .content .contact {
-    height: 500px; }
-  .content .testimonials {
-    height: 500px; }
+    height: 150px; }
+  .content .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .content .home img {
+      margin-top: 20px; }
+      .content .home img.circles {
+        margin-top: 80px; }
+  .content .footer {
+    height: 100px;
+    background: url("./assets/beans.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }

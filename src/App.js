@@ -1,44 +1,44 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import Headroom from 'react-headroom';
+
+// Components
+import Nav from './components/nav';
+import Contact from './components/contact';
+import Services from './components/services';
 
 import './App.css';
 
 class App extends Component {
   render() {
-    configureAnchors({offset: -150});
-    const logo = require('./assets/seed-logo.png');
-    
-    const nav = (
-      <ul>
-        <a href="#home"><li>Home</li></a>
-        <a href="#services"><li>Services</li></a>
-        <a href="#about"><li>About</li></a>
-        <a href="#contact"><li>Contact</li></a>
-        <a href="#testimonials"><li>Testimonials</li></a>
-        <a href="/blog"><li>Blog</li></a>
-      </ul>
-    )
-    
+    configureAnchors({offset: -70});
+    const logo = require('./assets/logo.png');
+    const circles = require('./assets/greencircles.png');
+
     return (
       <div className="app">
         <div className="content">
-          <div className="header">
-            <img src={logo} alt="Seed the Way"/>
-            <div className="menu">
-              {nav}
-            </div>
-          </div>
+          <Headroom>
+            <nav className="menu" ref="menu">
+              <Nav />
+            </nav>
+          </Headroom>
           <ScrollableAnchor id={'home'}>
-            <div className="slider section">
-              <h1>FINE!!!  I'll change it back to multi-page.  >:(</h1>
+            <div className="home section">
+              <a href="/">
+                <img className="logo" src={logo} height="250" width="570" alt="Seed the Way"/>
+              </a>
+              <a href="#services">
+                <img className="circles" src={circles} height="200" alt="Seed the Way"/>
+              </a>
             </div>
           </ScrollableAnchor>
           <div className="service-icons section">
-            <h2>service icons go here</h2>
           </div>
           <ScrollableAnchor id={'services'}>
           <div className="services section">
-              <h1>Services</h1>
+              <Services />
           </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'about'}>
@@ -48,7 +48,7 @@ class App extends Component {
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>
             <div className="contact section">
-                <h1>Contact</h1>
+                <Contact />
             </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'testimonials'}>
@@ -56,6 +56,7 @@ class App extends Component {
                 <h1>Testimonials</h1>
             </div>
           </ScrollableAnchor>
+          <footer className="footer" />
         </div>
       </div>
     );
