@@ -7,7 +7,7 @@ class Contact extends React.Component {
     const image = require('../../assets/table.png');
 
     return (
-      <div className="contact-form">
+      <div className="contact">
         <div className="contact-content">
           <div className="contact-left">
           <h1>Contact Seed the Way</h1>

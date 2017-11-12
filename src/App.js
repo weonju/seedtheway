@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import Headroom from 'react-headroom';
+import Fade from 'react-reveal/Fade'; 
 
 // Components
 import Nav from './components/nav';
 import Contact from './components/contact';
 import Services from './components/services';
+import About from './components/about';
 
 import './App.css';
 
 class App extends Component {
   render() {
-    configureAnchors({offset: -70});
+    configureAnchors({offset: -60});
     const logo = require('./assets/logo.png');
     const circles = require('./assets/greencircles.png');
 
@@ -34,16 +36,14 @@ class App extends Component {
               </a>
             </div>
           </ScrollableAnchor>
-          <div className="service-icons section">
-          </div>
           <ScrollableAnchor id={'services'}>
           <div className="services section">
-              <Services />
+            <Services />
           </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'about'}>
             <div className="about section">
-                <h1>About</h1>
+              <About />
             </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'contact'}>

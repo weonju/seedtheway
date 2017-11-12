@@ -1,13 +1,29 @@
 .services-content {
   display: flex;
   justify-content: space-around;
-  color: rgb(129, 127, 127);
 }
 
 .services-left,
 .services-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-headings {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-bottom: 0;
 }

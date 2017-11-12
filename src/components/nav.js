@@ -4,7 +4,7 @@ class Nav extends React.Component {
   render() {
 
     return (
-        <ul>
+        <ul className="nav">
           <a href="#home"><li>Home</li></a>
           <a href="#services"><li>Services</li></a>
           <a href="#about"><li>About</li></a>
