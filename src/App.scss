@@ -12,72 +12,63 @@
   font-family: "Seedfont";
   letter-spacing: 0.01em;
   color: $text;
-}
-.content {
-  background-color: #fff;
-  width: 100%;
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 0.2em;
-    font-weight: bold;
-    a {
-      text-decoration: none;
-      color: $brown;
+  .content {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 0.2em;
       font-weight: bold;
+      a {
+        text-decoration: none;
+        color: $brown;
+        font-weight: bold;
+      }
+      justify-content: center;
+      background-color: white;
+      width: 100%;
     }
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-  }
-  .nav {
-    display: flex;
-    justify-content: center;
-    li {
-      list-style-type: none;
-      margin-right: 50px;
-    }
-  }
-
-  .section {
-    padding: 0 80px;
-    h1 {
-      color: $brown;
-    }
-    margin-bottom: 100px;
-  }
-
-  .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      margin: 40px 0;
-      &.circles {
-        margin-bottom: 90px;
+    .nav {
+      display: flex;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        margin-right: 50px;
       }
     }
-  }
-  .about {
-    width: 90%;
-  }
-  .services {
-  }
-  .contact {
-  }
-  .testimonials {
-  }
-  .footer {
-    height: 100px;
-    background: url('./assets/beans.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    .section {
+      padding: 40px 80px;
+      h1 {
+        margin: 0;
+        color: $brown;
+      }
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+      background: #fff;
+      img {
+        margin: 40px 0;
+      }
+    }
+    .non-home {
+      background: linear-gradient(#fff, $bglight, $brown);
+    }
+
+    .footer {
+      height: 100px;
+      background: url('./assets/beans.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
-

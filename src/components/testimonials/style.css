@@ -1,0 +1,7 @@
+.testimonials .testimonials-content {
+  display: flex;
+  font-size: 14px; }
+  .testimonials .testimonials-content .left-column p {
+    margin-right: 50px; }
+  .testimonials .testimonials-content .client {
+    font-weight: bold; }

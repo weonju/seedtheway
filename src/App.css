@@ -9,11 +9,7 @@
   font-family: "Seedfont";
   letter-spacing: 0.01em;
   color: #47290f; }
-
-.content {
-  background-color: #fff;
-  width: 100%; }
-  .content .menu {
+  .app .content .menu {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -25,32 +21,32 @@
     justify-content: center;
     background-color: white;
     width: 100%; }
-    .content .menu a {
+    .app .content .menu a {
       text-decoration: none;
       color: #47290f;
       font-weight: bold; }
-  .content .nav {
+  .app .content .nav {
     display: flex;
     justify-content: center; }
-    .content .nav li {
+    .app .content .nav li {
       list-style-type: none;
       margin-right: 50px; }
-  .content .section {
-    padding: 0 80px;
-    margin-bottom: 100px; }
-    .content .section h1 {
+  .app .content .section {
+    padding: 40px 80px; }
+    .app .content .section h1 {
+      margin: 0;
       color: #47290f; }
-  .content .home {
+  .app .content .home {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .content .home img {
+    align-items: center;
+    padding-top: 0;
+    background: #fff; }
+    .app .content .home img {
       margin: 40px 0; }
-      .content .home img.circles {
-        margin-bottom: 90px; }
-  .content .about {
-    width: 90%; }
-  .content .footer {
+  .app .content .non-home {
+    background: linear-gradient(#fff, wheat, #47290f); }
+  .app .content .footer {
     height: 100px;
     background: url("./assets/beans.png");
     background-size: cover;

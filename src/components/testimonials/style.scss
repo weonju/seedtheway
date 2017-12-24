@@ -1,0 +1,12 @@
+.testimonials {
+  .testimonials-content {
+    display: flex;
+    font-size: 14px;
+    .left-column p {
+      margin-right: 50px;
+    }
+    .client {
+      font-weight: bold;
+    }
+  }
+}

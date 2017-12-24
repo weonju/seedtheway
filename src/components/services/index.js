@@ -1,25 +1,24 @@
 import React from 'react';
 import './style.css';
-import Fade from 'react-reveal/Fade'; 
 
 class Services extends React.Component {
   render() {
 
-    const imageLeft = require('../../assets/service-1.jpeg');
-    const imageRight = require('../../assets/service-2.jpg');
+    const imageTop = require('../../assets/service-1.jpeg');
+    const imageBottom = require('../../assets/service-2.jpg');
 
     return (
       <div className="services">
         <h1>Services</h1>
-        <div className="services-content">
-          <div className="services-left">
+
+        <div className="services-top">
+          <div className="services-content">
             <p className="services-headings">Professional Development,<br />Training & Consulting</p>
             <p>Seed the Way provides professional development and consultation for educators, 
               non-profit organizations, and businesses through interactive training workshops, 
               facilitated discussions, and collaborative strategic planning.</p>
               <h3>Examples of trainings offered:</h3>
               <ul className="service-list">
-              <Fade bottom cascade tag="ul" className="some-class">
                 <li>Equity Literacy: Anti-Bias Learning Environments</li>
                 <li>Talking About Race and Racism</li>
                 <li>Microaggressions: Intent & Impact</li>
@@ -35,18 +34,18 @@ class Services extends React.Component {
                 <li>Growing Empathy</li>
                 <li>Culturally Relevant Teaching: Practice and Pedagogy</li>
                 <li>Diversity, Equity and Inclusion​</li>
-                </Fade>
-              </ul>
+            </ul>
           </div>
-          <div className="services-right">
-            <img className="shadow" src={imageLeft} height="420" width="500" />
+          <div className="services-image">
+            <img className="top" src={imageTop} height="370" width="450" alt="workshop" />
           </div>
         </div>
-        <div className="services-content">
-          <div className="services-left">
-            <img className="shadow" src={imageRight} height="380" width="450" />
+        
+        <div className="services-bottom">
+          <div className="services-image">
+            <img className="bottom" src={imageBottom} height="380" width="450" alt="children in classroom"/>
           </div>
-          <div className="services-right">
+          <div className="services-content">
             <p className="services-headings">Educational Resources</p>
             <h3>Educational resource services offered:</h3>
             <ul className="service-list">

@@ -1,0 +1,8 @@
+.about .about-content {
+  display: flex; }
+  .about .about-content .about-image {
+    display: flex;
+    align-items: center;
+    margin-left: 80px; }
+  .about .about-content img {
+    box-shadow: 0 5px 15px #000; }
